@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: llmspring
+  ai:
+    openai.api-key: sk-123
