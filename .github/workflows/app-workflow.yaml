@@ -3,9 +3,14 @@ on:
   push:
     branches:
       - master
+    paths:
+      - 'src/**'
+      - '.github/workflows/app-workflow.yaml'
 jobs:
   my-job:
     runs-on: ubuntu-latest
     steps:
       - name: my-step1
         run: echo "Hello World!"
+      - name: my-step2
+        run: echo "Hello World 2!"
