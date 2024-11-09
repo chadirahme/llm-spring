@@ -1,4 +1,4 @@
-FROM openjdk:17-jdk
+FROM maven:3.8.6-openjdk-17 as builder
 
 WORKDIR /project
 
@@ -9,7 +9,7 @@ COPY src/ /project/src
 
 RUN mvn package
 
-FROM openjdk:17-jdk
+FROM eclipse-temurin:17-jre
 
 RUN mkdir /app
 
