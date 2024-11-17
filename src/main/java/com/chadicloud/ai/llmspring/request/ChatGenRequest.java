@@ -1,5 +1,5 @@
 package com.chadicloud.ai.llmspring.request;
 
-    public record ChatGenRequest(String prompt) {
+    public record ChatGenRequest(String prompt,String city,String interest) {
     }
 
